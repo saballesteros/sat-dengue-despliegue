@@ -52,6 +52,7 @@ import { TablaTriaje } from "@/components/tabla-triaje";
 import { DetalleMunicipio } from "@/components/detalle-municipio";
 import { ComparacionModelo } from "@/components/comparacion-modelo";
 import { Retroanalisis } from "@/components/retroanalisis";
+import { CargaDemostracion } from "@/components/carga-demostracion";
 import { useDashboard } from "@/lib/use-dashboard";
 import { DashboardClientError } from "@/lib/dashboard-client";
 import { etiquetaPeriodo, usePeriodos } from "@/lib/periodos";
@@ -279,6 +280,7 @@ export function Dashboard() {
       {encabezado}
 
       <main className="mx-auto max-w-7xl space-y-5 px-4 py-6">
+        <CargaDemostracion />
         {/* 1. Gobernanza. Una linea, no un bloque: la politica del proyecto
             exige declarar el estado, pero explicarlo en extenso ocupaba el
             lugar de la informacion y no ayudaba a nadie a decidir. */}
